@@ -27,7 +27,7 @@ class MessageDaoTest {
     @Test
     void insertMessage() throws SqlErrorException {
         Client dummyclient = new Client(101,"dummy","dummytoken");
-        Request request = new Request("dummy message for testing purpose", "7972757302", "2022-03-30T18:05:20");
+        Request request = new Request("dummy message for testing purpose", "8455997196", "2022-03-30T18:05:20");
         int actualResult = messageDao.insertMessage(request,dummyclient);
         assertEquals(1,actualResult);
     }
@@ -36,7 +36,7 @@ class MessageDaoTest {
     @Test
     void insetMessageAsClientIsNull() {
         Client dummyclient = new Client(101,"dummy","dummytoken");
-        Request request = new Request("dummy message for testing purpose", "7972757302", "2022-03-30T18:05:20");
+        Request request = new Request("dummy message for testing purpose", "8455997196", "2022-03-30T18:05:20");
         int actualResult = 0;
         try {
             actualResult = messageDao.insertMessage(request,null);
