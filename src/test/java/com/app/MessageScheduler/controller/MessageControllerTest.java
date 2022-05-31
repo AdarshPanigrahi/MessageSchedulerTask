@@ -120,7 +120,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
     @Test
     void scheduleMessageTest() throws Exception {
         Client dummyclient = new Client(10178, "dummy", "dummytoken");
-        Request request = new Request("test message", "7972757302", "2022-05-30T20:20:20");
+        Request request = new Request("test message", "8455997196", "2022-05-30T20:20:20");
         when(messageUtil.saveMessage(any(), any())).thenReturn(1);
         when(authorizationUtil.validateToken("dummytoken")).thenReturn(dummyclient);
 
